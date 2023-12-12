@@ -12,6 +12,9 @@ function generate_aliases() {
 
   # Generate alias for kubectl
   eval "alias kubectl-$alias_name='kubectl --kubeconfig=$config_file'"
+
+  # Generate alias for helm
+  eval "alias helm-$alias_name='helm --kubeconfig=$config_file'"
 }
 
 # Generate the aliases
